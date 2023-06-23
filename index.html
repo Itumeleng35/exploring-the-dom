@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .myMessage .darkmode {
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <script src="index.js" defer></script>
+</head>
+<body>
+  <h1>Learn about the DOM</h1>  
+
+  <div class="myMessage">
+    <span class="darkmode">This is a message in the DOM!</span>
+  </div>
+
+  <button class="theMessageButton">Show message</button>
+
+  <input type="text" class="theInputValue">
+
+  <script>
+    setTimeout(function () {
+      var myMessage = document.querySelector('.myMessage .darkmode');
+      myMessage.innerHTML = 'This is a message in the DOM!';
+    }, 3000);
+  </script>
+
+<ul class="fruits" >
+</ul>
+
+
+</body>
+</html>
+
+
